@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate(-100%,0%);
+  transition: 0.6s ease;
+}
+
+.active {
+  transform: translate(0,0);
+}
+
+.active ~ .slide {
+  transform: translate(100%,0);
+}
+
+.s1 {
+  background: url("https://images.pexels.com/photos/103567/pexels-photo-103567.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: 100% 100%;
+}
+
+.s2 {
+  background: url("https://images.pexels.com/photos/414320/pexels-photo-414320.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: 100% 100%;
+}
+
+.s3 {
+  background: url("https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-size: 100% 100%;
+}
+
+.s4 {
+  background: url("https://images.unsplash.com/photo-1475082211816-b48baf3f69e3?ixlib=rb-0.3.5&s=897cc008efe953c01c5c9114111cd2ff&auto=format&fit=crop&w=1350&q=80");
+  background-size: 100% 100%;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  background: url("https://raw.githubusercontent.com/DaftCreation/Image-Slider/master/Line%20pattern.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 999;
+  -webkit-clip-path:polygon(0% 100%,100% 100%,100% 80%,93% 85%,8% 95%,15% 6%,89% 22%,93% 85%,100% 80%,100% 0%,0% 0%,0% 100%);
+  transition: all 1s;
+}
